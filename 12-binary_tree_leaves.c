@@ -30,6 +30,6 @@ size_t supporter(const binary_tree_t *tree, size_t leaves)
 		leaves += 1;
 	}
 	leaves = supporter(tree->right, leaves);
-        leaves = supporter(tree->left, leaves);
+	leaves = supporter(tree->left, leaves);
 	return (leaves);
 }
