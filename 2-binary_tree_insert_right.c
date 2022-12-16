@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_insert_left - insert node to left of given parent noee
+ * binary_tree_insert_right - insert node to right of given parent noee
  * Description - If parent already has a left-child, the new node must take
  *  its place, and the old left-child must
  *  be set as the left-child of the new node.
