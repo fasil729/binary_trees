@@ -29,7 +29,7 @@ int main(void)
     printf("Sibling of %d: %d\n", root->right->left->n, sibling->n);
     sibling = binary_tree_sibling(root->left->right);
     printf("Sibling of %d: %d\n", root->left->right->n, sibling->n);
-    sibling = binary_tree_sibling(root);
-    printf("Sibling of %d: %p\n", root->n, (void *)sibling);
+    sibling = binary_tree_sibling(NULL);
+    printf("Sibling of NULL: %p\n", (void *)sibling);
     return (0);
 }
