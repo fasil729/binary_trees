@@ -4,13 +4,17 @@
  * @first: a pointer to the first node
  * @second: a pointer to the second node
  * Return: a pointer to the lowest common ancestor
- * node of the two given nodes
+ *  node of the two given nodes
+ *  @node: apointer to the node
+ *  @tree: apointer to the root of the sub-tree
  */
+
 int find(const binary_tree_t *node, const binary_tree_t *tree);
 
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+		const binary_tree_t *second)
 {
-	if ((!first && second))
+	if (!(first && second))
 		return (NULL);
 	if (find(second, first))
 		return (first->right->parent);
